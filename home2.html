@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCraft | Home 2 - Premium Board Game Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .game-card-premium {
+            position: relative;
+            height: 350px;
+            border-radius: 30px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .game-card-premium img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+            opacity: 0.7;
+        }
+
+        .game-card-premium:hover img {
+            transform: scale(1.1);
+            opacity: 0.4;
+        }
+
+        .game-info-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            transform: translateY(100px);
+            transition: 0.5s;
+        }
+
+        .game-card-premium:hover .game-info-overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-chess-knight"></i>
+                <span>PlayCraft</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html" class="active">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="prototypes.html">Prototypes</a></li>
+                    <li><a href="rulebooks.html">Rulebooks</a></li>
+                    <li><a href="playtest.html">Playtest</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="toggle-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="toggle-btn" id="rtl-toggle">RTL</button>
+                <i class="fas fa-bars hamburger" id="hamburger"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Animated Hero Section -->
+        <section class="hero"
+            style="background-image: url('https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&q=80&w=1920');">
+            <div class="hero-overlay"></div>
+            <div class="container" style="text-align: center; z-index: 2; position: relative; color: white;">
+                <h1 class="hero-title" style="font-size: 5rem; margin-bottom: 20px;">Mastering the <span
+                        style="color: var(--secondary);">Art of Play.</span></h1>
+                <p class="hero-description" style="max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem;">Bespoke
+                    board game design for publishers and dreamers. Premium mechanics, high-fidelity prototypes, and
+                    global reach. I specialize in turning complex ideas into streamlined tabletop experiences that resonate with players of all levels.</p>
+                <div class="hero-btns">
+                    <a href="games.html" class="btn btn-primary"
+                        style="padding: 18px 45px; border-radius: 50px;">Explore Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Game Grid -->
+        <section id="game-grid">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Premium Collection</h2>
+                    <p>A handpicked selection of top-performing titles.</p>
+                </div>
+                <div class="grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div class="game-card-premium animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
+                            alt="Strategy Game">
+                        <div class="game-info-overlay">
+                            <h3>Iron Empires</h3>
+                            <p>Industrial revolution resource management.</p>
+                        </div>
+                    </div>
+                    <div class="game-card-premium animate-on-scroll">
+                        <img src="https://images.pexels.com/photos/7708411/pexels-photo-7708411.jpeg" alt="Card Game">
+                        <div class="game-info-overlay">
+                            <h3>Echoes of Eldoria</h3>
+                            <p>Asymmetrical deck-building card game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study Section -->
+        <section id="case-study" style="background: #f1f5f9;">
+            <div class="container" style="display: flex; align-items: center; gap: 60px;">
+                <div class="case-visual animate-left" style="flex: 1.2;">
+                    <img src="https://images.pexels.com/photos/35447973/pexels-photo-35447973.jpeg" alt="Case Study"
+                        style="width: 100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.15);">
+                </div>
+                <div class="case-content animate-up" style="flex: 1;">
+                    <span
+                        style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">Case
+                        Study</span>
+                    <h2 style="font-size: 3rem; margin: 20px 0 30px;">From Concept to Tabletop Reality</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.8;">StarVoyager Nova wasn't just a
+                        game; it was an experiment in high-speed engine building. See how we balanced 400+ unique cards
+                        over 2 years of playtesting.</p>
+                    <a href="#" class="btn btn-primary">Read Full Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mechanics & Philosophy -->
+        <section id="philosophy">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mechanics & Philosophy</h2>
+                    <p>I believe every game should tell a story through its systems.</p>
+                </div>
+                <div style="display: flex; gap: 40px;">
+                    <div class="philosophy-item animate-up"
+                        style="flex: 1; padding: 40px; background: white; border-bottom: 5px solid var(--secondary); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <img src="https://images.pexels.com/photos/6115020/pexels-photo-6115020.jpeg" alt="System"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 25px;">
+                        <h3>Symmetry vs. Tension</h3>
+                        <p>Finding the perfect balance between fair play and exciting competition.</p>
+                    </div>
+                    <div class="philosophy-item animate-up"
+                        style="flex: 1; padding: 40px; background: white; border-bottom: 5px solid var(--primary); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <img src="https://images.pexels.com/photos/7799559/pexels-photo-7799559.jpeg" alt="Play"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 25px;">
+                        <h3>Narrative Integration</h3>
+                        <p>How components and rules work together to immerse the player in a world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community & Playtesting -->
+        <section id="community" style="background: var(--bg-dark); color: white;">
+            <div class="container" style="display: flex; align-items: center; gap: 60px;">
+                <div style="flex: 1;">
+                    <h2 style="font-size: 3rem; color: white;">A Community of Gamers</h2>
+                    <p style="margin: 30px 0; opacity: 0.7; font-size: 1.1rem;">I don't design in a vacuum. My games are
+                        shaped by thousands of playtesters across the globe.</p>
+                    <div style="display: flex; gap: 20px;">
+                        <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=400"
+                            alt="Playtest 1"
+                            style="width: 150px; height: 150px; border-radius: 20px; object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=400"
+                            alt="Playtest 2"
+                            style="width: 150px; height: 150px; border-radius: 20px; object-fit: cover;">
+                    </div>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <div style="padding: 60px; border: 2px dashed var(--secondary); border-radius: 30px;">
+                        <i class="fab fa-discord"
+                            style="font-size: 4rem; color: var(--secondary); margin-bottom: 30px;"></i>
+                        <h3>Join our Discord</h3>
+                        <p style="margin-bottom: 30px; opacity: 0.7;">Weekly playtests, design workshops, and community
+                            hanging out.</p>
+                        <a href="#" class="btn btn-secondary">Jump In</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="home2-newsletter"
+            style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200');">
+            <div class="hero-overlay" style="border-radius: 40px;"></div>
+            <div class="container animate-up" style="position: relative; z-index: 2;">
+                <div class="newsletter-card">
+                    <h2>Stay in the Loop</h2>
+                    <p>Get early bird updates on new prototypes and Kickstarter launches.</p>
+                    <form style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Your email address"
+                            style="flex: 1; padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(0,0,0,0.1); background: white; color: #1e293b;">
+                        <button class="btn btn-primary" style="border-radius: 50px; padding: 0 35px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-desc">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-chess-knight"></i>
+                        <span>PlayCraft</span>
+                    </a>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="games.html">My Games</a></li>
+                        <li><a href="playtest.html">Playtest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="rulebooks.html">Rulebooks</a></li>
+                        <li><a href="prototypes.html">Prototypes</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Stay Connected</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
+                    <form style="display: flex; gap: 8px;">
+                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

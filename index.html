@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCraft | Home 1 - Classic Board Game Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-chess-knight"></i>
+                <span>PlayCraft</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="prototypes.html">Prototypes</a></li>
+                    <li><a href="rulebooks.html">Rulebooks</a></li>
+                    <li><a href="playtest.html">Playtest</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="toggle-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="toggle-btn" id="rtl-toggle">RTL</button>
+                <i class="fas fa-bars hamburger" id="hamburger"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero"
+            style="background-image: url('https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?auto=format&fit=crop&q=80&w=1920');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container"
+                style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                <div class="hero-content" style="max-width: 800px; z-index: 2; margin: 0 auto;">
+                    <h1 class="hero-title">Crafting
+                        Worlds, <br><span style="color: var(--secondary);">One Move</span> at a Time.</h1>
+                    <p class="hero-description" style="font-size: 1.25rem; margin-bottom: 40px; opacity: 0.9;">I'm a
+                        freelance board game designer specializing in immersive mechanics, strategic depth, and
+                        unforgettable tabletop experiences. From rapid prototyping to final rulebook development, I bridge the gap between creative vision and table-ready reality.</p>
+                    <div class="hero-btns" style="display: flex; justify-content: center; gap: 20px;">
+                        <a href="playtest.html" class="btn btn-primary"
+                            style="padding: 15px 35px; font-size: 1rem;">Join a Playtest</a>
+                        <a href="#featured" class="btn btn-secondary" style="padding: 15px 35px; font-size: 1rem;">View
+                            My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Games Section -->
+        <section id="featured" class="featured-games">
+            <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&q=80&w=1920"
+                alt="Games BG" class="section-bg-img">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Games</h2>
+                    <p>Discover my latest published titles that are hitting tables worldwide.</p>
+                </div>
+                <div class="games-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <!-- Game 1 -->
+                    <div class="card animate-on-scroll">
+                        <img src="https://images.pexels.com/photos/207924/pexels-photo-207924.jpeg" alt="StarVoyager">
+                        <div class="card-content">
+                            <span
+                                style="background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">STRATEGY</span>
+                            <h3 style="margin: 15px 0 10px;">StarVoyager: Nova</h3>
+                            <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px;">A fast-paced worker
+                                placement game set in a collapsing star system.</p>
+                            <button class="btn btn-primary" onclick="openGameModal(this)" data-title="StarVoyager: Nova"
+                                data-image="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=800"
+                                data-desc="A fast-paced worker placement game set in a collapsing star system. Balance resource gathering with ship upgrades as you race to escape before the Supernova. Every decision could be your last."
+                                style="padding: 10px 25px; font-size: 0.85rem; width: fit-content; margin: 0 auto; display: block;">View Details</button>
+                        </div>
+                    </div>
+                    <!-- Game 2 -->
+                    <div class="card animate-on-scroll" style="animation-delay: 0.1s;">
+                        <img src="https://images.pexels.com/photos/8111324/pexels-photo-8111324.jpeg"
+                            alt="Mystic Grove">
+                        <div class="card-content">
+                            <span
+                                style="background: var(--secondary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">FAMILY</span>
+                            <h3 style="margin: 15px 0 10px;">Mystic Grove</h3>
+                            <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px;">Protect the forest and its
+                                creatures in this beautiful tile-laying game.</p>
+                            <button class="btn btn-primary" onclick="openGameModal(this)" data-title="Mystic Grove"
+                                data-image="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=800"
+                                data-desc="Protect your sacred forest as druids in this beautiful tile-laying adventure. Harmonize with nature to outwit the industrial blight. Simple enough for families, deep enough for veterans."
+                                style="padding: 10px 25px; font-size: 0.85rem; width: fit-content; margin: 0 auto; display: block;">View Details</button>
+                        </div>
+                    </div>
+                    <!-- Game 3 -->
+                    <div class="card animate-on-scroll" style="animation-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&q=80&w=600"
+                            alt="Midnight Manor">
+                        <div class="card-content">
+                            <span
+                                style="background: #10b981; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">DETECTIVE</span>
+                            <h3 style="margin: 15px 0 10px;">Midnight Manor</h3>
+                            <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px;">Solve the riddle of the
+                                manor before the clock strikes twelve.</p>
+                            <button class="btn btn-primary" onclick="openGameModal(this)" data-title="Midnight Manor"
+                                data-image="https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&q=80&w=800"
+                                data-desc="A social deduction game of shadows and secrets. One player is the phantom haunting the manor, while others must uncover the mystery before the clock strikes twelve. Every clue matters."
+                                style="padding: 10px 25px; font-size: 0.85rem; width: fit-content; margin: 0 auto; display: block;">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process Section -->
+        <section id="process" style="background: #f8fafc; position: relative;">
+            <div class="container" style="position: relative; z-index: 2; max-width: 1100px;">
+                <div class="section-header">
+                    <h2>The Design Process</h2>
+                    <p>How a simple idea transforms into a table-ready masterpiece.</p>
+                </div>
+                <div class="process-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 0 20px;">
+                        <div class="process-step animate-on-scroll" style="text-align: center;">
+                            <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&q=80&w=600"
+                                alt="Ideation"
+                                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--primary);">
+                            <h3>1. Ideation</h3>
+                            <p>Brainstorming mechanics and themes to find the "hook".</p>
+                        </div>
+                        <div class="process-step animate-on-scroll" style="text-align: center;">
+                            <img src="https://images.pexels.com/photos/7776195/pexels-photo-7776195.jpeg"
+                                alt="Prototyping"
+                                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--secondary);">
+                            <h3>2. Prototyping</h3>
+                            <p>Rapidly building and testing core loops with physical components.</p>
+                        </div>
+                        <div class="process-step animate-on-scroll" style="text-align: center;">
+                            <img src="https://images.pexels.com/photos/15574421/pexels-photo-15574421.jpeg"
+                                alt="Iteration"
+                                style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--primary);">
+                            <h3>3. Iteration</h3>
+                            <p>Polishing rules and balancing based on community playtests.</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=1920"
+                alt="Testimonials BG" class="section-bg-img">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Praise from the Table</h2>
+                    <p>What publishers and gamers are saying about my designs.</p>
+                </div>
+                <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div class="testimonial-card animate-on-scroll"
+                        style="padding: 40px; background: var(--bg-light); border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100"
+                            alt="Publisher" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <p style="font-style: italic; margin-bottom: 15px;">"The mechanics in StarVoyager are some
+                                of the most elegant we've seen in years. Truly a masterpiece of design."</p>
+                            <h4 style="margin: 0; text-align: center;">Sarah Jenkins</h4>
+                            <span style="font-size: 0.8rem; opacity: 0.6; display: block; text-align: center;">CEO, Galactic Games</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll"
+                        style="padding: 40px; background: var(--bg-light); border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100"
+                            alt="Playtester" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <p style="font-style: italic; margin-bottom: 15px;">"I've playtested many games, but this
+                                designer's approach to feedback is refreshing and results in amazing balance."</p>
+                            <h4 style="margin: 0; text-align: center;">Marcus Thorne</h4>
+                            <span style="font-size: 0.8rem; opacity: 0.6; display: block; text-align: center;">Veteran Playtester</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Prototypes Section -->
+        <section id="upcoming" style="background: var(--bg-dark); color: white;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 style="color: white;">Upcoming Prototypes</h2>
+                    <p style="color: rgba(255,255,255,0.7);">Peek into the future of my design studio.</p>
+                </div>
+                <div class="upcoming-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                    <div class="prototype-card animate-on-scroll"
+                        style="position: relative; border-radius: 20px; overflow: hidden; height: 400px;">
+                        <img src="https://images.pexels.com/photos/19677/pexels-photo.jpg" alt="Project X"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+                        <div style="position: absolute; bottom: 40px; left: 40px; z-index: 2;">
+                            <span
+                                style="background: var(--secondary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">IN
+                                DEVELOPMENT</span>
+                            <h3 style="font-size: 1.8rem; margin: 15px 0;">Project: Aether Bridge</h3>
+                            <p style="opacity: 0.8;">A cooperative puzzle game about connecting ancient civilizations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prototype-card animate-on-scroll"
+                        style="position: relative; border-radius: 20px; overflow: hidden; height: 400px;">
+                        <img src="https://images.pexels.com/photos/7329697/pexels-photo-7329697.jpeg" alt="Project Y"
+                            style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+                        <div style="position: absolute; bottom: 40px; left: 40px; z-index: 2;">
+                            <span
+                                style="background: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">ALPHA
+                                TESTING</span>
+                            <h3 style="font-size: 1.8rem; margin: 15px 0;">Kingdom's Edge</h3>
+                            <p style="opacity: 0.8;">Area control and bluffing game set in a crumbling empire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section"
+            style="padding: 120px 0; text-align: center; background-image: url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; position: relative;">
+            <div class="hero-overlay"></div>
+            <div class="container animate-up" style="position: relative; z-index: 2; color: white;">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Playtest?</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 40px; opacity: 0.9;">Join my exclusive playtesting group
+                    and help shape the next big hit.</p>
+                <a href="playtest.html" class="btn btn-secondary"
+                    style="padding: 18px 45px; font-size: 1.1rem; border-radius: 50px;">Sign Up Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-desc">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-chess-knight"></i>
+                        <span>PlayCraft</span>
+                    </a>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="games.html">My Games</a></li>
+                        <li><a href="playtest.html">Playtest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="rulebooks.html">Rulebooks</a></li>
+                        <li><a href="prototypes.html">Prototypes</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Stay Connected</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
+                    <form style="display: flex; gap: 8px;">
+                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dynamic Game Modal -->
+    <div id="game-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-close" onclick="closeGameModal()">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-img-container">
+                <img id="modal-img" src="" alt="Game Detail" class="modal-img">
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-title" class="modal-title">Game Title</h2>
+                <p id="modal-desc" class="modal-description">Game description goes here...</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="playtest.html" class="btn btn-primary">Join a Playtest</a>
+                    <button class="btn btn-secondary" onclick="closeGameModal()">Close Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PlayCraft - Let's Design the Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-chess-knight"></i>
+                <span>PlayCraft</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="prototypes.html">Prototypes</a></li>
+                    <li><a href="rulebooks.html">Rulebooks</a></li>
+                    <li><a href="playtest.html">Playtest</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="toggle-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="toggle-btn" id="rtl-toggle">RTL</button>
+                <i class="fas fa-bars hamburger" id="hamburger"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&q=80&w=1920'); height: 65vh; background-attachment: fixed;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.75);"></div>
+            <div class="container" style="position: relative; z-index: 2; text-align: center; color: white; display: flex; flex-direction: column; align-items: center;">
+                <h1 class="hero-title animate-up">Let's Connect & <br><span style="color: var(--secondary);">Build Something Fun</span></h1>
+                <p class="animate-up" style="font-size: 1.25rem; max-width: 700px; margin: 20px auto 0; opacity: 0.9; animation-delay: 0.2s;">Whether you're a publisher looking for the next hit or a fellow designer wanting to collaborate, my studio doors are always open.</p>
+            </div>
+        </section>
+
+        <!-- 2. Contact Information & Form Section -->
+        <section id="contact-main" style="padding: 100px 0; background: #f8fafc;">
+            <div class="container">
+                <div style="display: flex; gap: 60px; flex-wrap: wrap; align-items: stretch;">
+                    
+                    <!-- Left Side: Combined Contact Info Card -->
+                    <div style="flex: 1; min-width: 320px;" class="animate-left">
+                        <div class="theme-card" style="padding: 60px; border-radius: 40px; height: 100%; display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s;">
+                            
+                            <h2 style="font-size: 2.2rem; margin-bottom: 40px; color: var(--primary);">Contact Details</h2>
+                            
+                            <!-- Visit Us -->
+                            <div style="display: flex; gap: 25px; margin-bottom: 45px; align-items: flex-start;">
+                                <div style="width: 60px; height: 60px; background: rgba(79, 70, 229, 0.1); color: var(--primary); border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 8px;">Visit Us</h4>
+                                    <p style="opacity: 0.7; font-size: 1.05rem; line-height: 1.6;">123 Designer Row, Creative District<br>Manhattan, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Call Us -->
+                            <div style="display: flex; gap: 25px; margin-bottom: 45px; align-items: flex-start;">
+                                <div style="width: 60px; height: 60px; background: rgba(245, 158, 11, 0.1); color: var(--secondary); border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 8px;">Call Us</h4>
+                                    <p style="opacity: 0.7; font-size: 1.05rem;">+1 (555) 012-3456</p>
+                                </div>
+                            </div>
+
+                            <!-- Email Us -->
+                            <div style="display: flex; gap: 25px; margin-bottom: 45px; align-items: flex-start;">
+                                <div style="width: 60px; height: 60px; background: rgba(79, 70, 229, 0.1); color: var(--primary); border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: 8px;">Email Us</h4>
+                                    <p style="opacity: 0.7; font-size: 1.05rem;">hello@playcraft.com</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Follow Us (Socials Only) -->
+                            <div style="display: flex; gap: 25px; align-items: center;">
+                                <div style="width: 60px; height: 60px; background: rgba(79, 70, 229, 0.1); color: var(--primary); border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;"><i class="fas fa-share-alt"></i></div>
+                                <div style="display: flex; gap: 15px;">
+                                    <a href="#" class="social-icon" style="width: 45px; height: 45px; background: rgba(0,0,0,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon" style="width: 45px; height: 45px; background: rgba(0,0,0,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-icon" style="width: 45px; height: 45px; background: rgba(0,0,0,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: transform 0.3s;"><i class="fab fa-discord"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div style="flex: 1.2; min-width: 320px;" class="animate-up">
+                        <div class="theme-card" style="padding: 60px; border-radius: 40px;">
+                            <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Send a Message</h2>
+                            <p style="opacity: 0.6; margin-bottom: 40px;">I usually respond within 24–48 hours.</p>
+                            
+                            <form class="contact-form">
+                                <div class="form-group" style="margin-bottom: 25px;">
+                                    <label>Full Name</label>
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                
+                                <div class="form-group" style="margin-bottom: 25px;">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="example@gmail.com">
+                                </div>
+                                
+                                <div class="form-group" style="margin-bottom: 35px;">
+                                    <label>How can I help?</label>
+                                    <textarea placeholder="Tell me about your project..." rows="5"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 20px; border-radius: 15px; font-size: 1.1rem; font-weight: 700;">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Map Section -->
+        <section id="map" style="padding-bottom: 100px; background: #f8fafc;">
+            <div class="container animate-up">
+                <div style="border-radius: 40px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.1); height: 500px; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280821873!2d-74.11976373946229!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1709400000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-desc">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-chess-knight"></i>
+                        <span>PlayCraft</span>
+                    </a>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="games.html">My Games</a></li>
+                        <li><a href="playtest.html">Playtest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="rulebooks.html">Rulebooks</a></li>
+                        <li><a href="prototypes.html">Prototypes</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Stay Connected</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
+                    <form style="display: flex; gap: 8px;">
+                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

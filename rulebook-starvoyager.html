@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarVoyager: Rulebook Details - PlayCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-chess-knight"></i>
+                <span>PlayCraft</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="prototypes.html">Prototypes</a></li>
+                    <li><a href="rulebooks.html">Rulebooks</a></li>
+                    <li><a href="playtest.html">Playtest</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="toggle-btn" id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button class="toggle-btn" id="rtl-toggle">RTL</button>
+                <i class="fas fa-bars hamburger" id="hamburger"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="hero detail-hero" style="background-image: url('https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&q=80&w=1920'); height: 50vh;">
+            <div class="hero-overlay"></div>
+            <div class="container animate-up" style="position: relative; z-index: 2; text-align: center;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 20px;">StarVoyager Manual</h1>
+                <p style="font-size: 1.2rem; opacity: 0.8; max-width: 600px; margin: 0 auto;">Official complete rulebook and strategy guide for the 2023 edition.</p>
+                <a href="#" class="btn btn-secondary" style="margin-top: 30px; padding: 15px 40px;"><i class="fas fa-download"></i> Download PDF (12MB)</a>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section id="manual-preview">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 60px;">
+                    <div class="animate-left">
+                        <img src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&q=80&w=800" alt="Manual Page 1" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="animate-right">
+                         <img src="https://images.unsplash.com/photo-1543616991-75037944ce69?auto=format&fit=crop&q=80&w=800" alt="Manual Page 2" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <div class="animate-up" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2>Comprehensive Learning</h2>
+                    <p style="font-size: 1.1rem; opacity: 0.7; margin-top: 20px;">We take rulebook readability seriously. Our manuals are designed with color-coded keywords, cross-referenced page numbers, and illustrative examples for every mechanic. No more arguing over confusing rule interpretations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions (Visual Steps) -->
+        <section id="usage-steps" style="background: #f8fafc;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How to Use This Manual</h2>
+                </div>
+                <div style="display: flex; gap: 40px; text-align: center;">
+                    <div style="flex: 1;" class="animate-up">
+                        <div style="width: 80px; height: 80px; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; border-radius: 50%; margin: 0 auto 20px;">1</div>
+                        <h3>Quick Start</h3>
+                        <p style="opacity: 0.7;">Jump right in with our 5-minute setup and basic movement guide on page 2.</p>
+                    </div>
+                    <div style="flex: 1;" class="animate-up" style="animation-delay: 0.1s;">
+                        <div style="width: 80px; height: 80px; background: var(--secondary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; border-radius: 50%; margin: 0 auto 20px;">2</div>
+                        <h3>Full Reference</h3>
+                        <p style="opacity: 0.7;">Use the alphabetically sorted terminology index on page 28 for detailed questions.</p>
+                    </div>
+                    <div style="flex: 1;" class="animate-up" style="animation-delay: 0.2s;">
+                        <div style="width: 80px; height: 80px; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; border-radius: 50%; margin: 0 auto 20px;">3</div>
+                        <h3>FAQ Summary</h3>
+                        <p style="opacity: 0.7;">Check the back cover for our most commonly asked player scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding: 100px 0; text-align: center; background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; position: relative;">
+            <div class="hero-overlay"></div>
+            <div class="container animate-up" style="position: relative; z-index: 2; color: white;">
+                <h2>Need a custom rulebook written?</h2>
+                <a href="contact.html" class="btn btn-primary" style="padding: 18px 45px; margin-top: 30px;">Request Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo-desc">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-chess-knight"></i>
+                        <span>PlayCraft</span>
+                    </a>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="games.html">My Games</a></li>
+                        <li><a href="playtest.html">Playtest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="rulebooks.html">Rulebooks</a></li>
+                        <li><a href="prototypes.html">Prototypes</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Stay Connected</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
