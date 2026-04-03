@@ -535,6 +535,82 @@ body.dark-mode .header-container {
     background: rgba(15, 23, 42, 0.95);
 }
 
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.games-grid .card {
+    flex: 0 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.process-step {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    padding: 40px;
+    background: var(--bg-light);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .games-grid .card {
+        flex: 0 1 calc(50% - 15px);
+    }
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .games-grid .card {
+        flex: 0 1 100%;
+    }
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+}
+
 /* Fix specific colors that might be too dark */
 body.dark-mode a {
     color: #f1f5f9;
@@ -1054,6 +1130,19 @@ body.dark-mode .contact-form textarea:focus {
         border-radius: 20px;
     }
     .newsletter-card { padding: 30px 15px; }
+    .hero-btns {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .hero-btns .btn {
+        width: 100% !important;
+        max-width: 320px !important;
+        white-space: nowrap !important;
+        padding: 15px 30px !important;
+    }
 }
 
 @media (max-width: 480px) {
