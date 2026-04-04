@@ -39,13 +39,80 @@
             left: 0;
             width: 100%;
             padding: 40px;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
             transform: translateY(100px);
             transition: 0.5s;
+            color: white !important;
+            text-align: center;
+        }
+
+        .game-info-overlay h3 {
+            color: white !important;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .game-info-overlay p {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-size: 1rem;
+        }
+
+        .premium-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .premium-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .game-info-overlay {
+                transform: translateY(0);
+                padding: 30px 20px;
+            }
         }
 
         .game-card-premium:hover .game-info-overlay {
             transform: translateY(0);
+        }
+
+        .case-study-flex, .community-flex {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .community-images {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-flex {
+                flex-direction: column-reverse;
+                gap: 40px;
+                text-align: center;
+            }
+            .community-flex {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+            .case-content h2, .community-flex h2 {
+                font-size: 2.2rem;
+            }
+            .community-images {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .community-images img {
+                width: 100% !important;
+                max-width: 350px !important;
+                height: 250px !important;
+            }
         }
     </style>
 </head>
@@ -86,7 +153,7 @@
             style="background-image: url('https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&q=80&w=1920');">
             <div class="hero-overlay"></div>
             <div class="container" style="text-align: center; z-index: 2; position: relative; color: white;">
-                <h1 class="hero-title" style="font-size: 5rem; margin-bottom: 20px;">Mastering the <span
+                <h1 class="hero-title">Mastering the <span
                         style="color: var(--secondary);">Art of Play.</span></h1>
                 <p class="hero-description" style="max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem;">Bespoke
                     board game design for publishers and dreamers. Premium mechanics, high-fidelity prototypes, and
@@ -105,7 +172,7 @@
                     <h2>The Premium Collection</h2>
                     <p>A handpicked selection of top-performing titles.</p>
                 </div>
-                <div class="grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                <div class="premium-grid">
                     <div class="game-card-premium animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
                             alt="Strategy Game">
@@ -127,7 +194,7 @@
 
         <!-- Case Study Section -->
         <section id="case-study" style="background: #f1f5f9;">
-            <div class="container" style="display: flex; align-items: center; gap: 60px;">
+            <div class="container case-study-flex">
                 <div class="case-visual animate-left" style="flex: 1.2;">
                     <img src="https://images.pexels.com/photos/35447973/pexels-photo-35447973.jpeg" alt="Case Study"
                         style="width: 100%; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.15);">
@@ -152,7 +219,7 @@
                     <h2>Mechanics & Philosophy</h2>
                     <p>I believe every game should tell a story through its systems.</p>
                 </div>
-                <div style="display: flex; gap: 40px;">
+                <div class="philosophy-grid">
                     <div class="philosophy-item animate-up"
                         style="flex: 1; padding: 40px; background: white; border-bottom: 5px solid var(--secondary); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                         <img src="https://images.pexels.com/photos/6115020/pexels-photo-6115020.jpeg" alt="System"
@@ -173,12 +240,12 @@
 
         <!-- Community & Playtesting -->
         <section id="community" style="background: var(--bg-dark); color: white;">
-            <div class="container" style="display: flex; align-items: center; gap: 60px;">
+            <div class="container community-flex">
                 <div style="flex: 1;">
                     <h2 style="font-size: 3rem; color: white;">A Community of Gamers</h2>
                     <p style="margin: 30px 0; opacity: 0.7; font-size: 1.1rem;">I don't design in a vacuum. My games are
                         shaped by thousands of playtesters across the globe.</p>
-                    <div style="display: flex; gap: 20px;">
+                    <div class="community-images">
                         <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=400"
                             alt="Playtest 1"
                             style="width: 150px; height: 150px; border-radius: 20px; object-fit: cover;">
@@ -208,10 +275,10 @@
                 <div class="newsletter-card">
                     <h2>Stay in the Loop</h2>
                     <p>Get early bird updates on new prototypes and Kickstarter launches.</p>
-                    <form style="display: flex; gap: 10px;">
+                    <form class="newsletter-form">
                         <input type="email" placeholder="Your email address"
-                            style="flex: 1; padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(0,0,0,0.1); background: white; color: #1e293b;">
-                        <button class="btn btn-primary" style="border-radius: 50px; padding: 0 35px;">Subscribe</button>
+                            style="padding: 15px 25px; border-radius: 50px; border: 1px solid rgba(0,0,0,0.1); background: white; color: #1e293b;">
+                        <button class="btn btn-primary" style="border-radius: 50px; padding: 15px 35px;">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -259,9 +326,9 @@
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
                     <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
-                    <form style="display: flex; gap: 8px;">
-                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
-                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>

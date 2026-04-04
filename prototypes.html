@@ -48,9 +48,11 @@
         <section class="hero"
             style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=1920'); height: 50vh;">
             <div class="hero-overlay"></div>
-            <div class="container" style="z-index: 2; position: relative; color: white; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="container"
+                style="z-index: 2; position: relative; color: white; display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <h1 class="hero-title">The Laboratory</h1>
-                <p class="hero-description" style="font-size: 1.25rem; max-width: 800px;">Peek behind the curtain at works-in-progress and experimental mechanics.</p>
+                <p class="hero-description" style="font-size: 1.25rem; max-width: 800px;">Peek behind the curtain at
+                    works-in-progress and experimental mechanics.</p>
             </div>
         </section>
 
@@ -61,22 +63,24 @@
                     <h2>Active Projects</h2>
                     <p>Current prototypes undergoing rigorous testing and iteration.</p>
                 </div>
-                <div class="prototype-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px;">
-                    <div class="prototype-card animate-on-scroll">
+                <div class="games-grid">
+                    <div class="card animate-on-scroll">
                         <img src="https://images.pexels.com/photos/8159116/pexels-photo-8159116.jpeg"
                             alt="Aether Bridge" style="width: 100%; height: 350px; object-fit: cover;">
-                        <div class="prototype-card-content">
+                        <div class="card-content">
                             <h3>Project: Aether Bridge</h3>
-                            <p>Connecting floating islands via complex card combos. A cooperative puzzle with high strategic depth.</p>
+                            <p>Connecting floating islands via complex card combos. A cooperative puzzle with high
+                                strategic depth.</p>
                             <a href="prototype-aether.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
-                    <div class="prototype-card animate-on-scroll">
+                    <div class="card animate-on-scroll">
                         <img src="https://images.pexels.com/photos/6250937/pexels-photo-6250937.jpeg"
                             alt="Iron Empires II" style="width: 100%; height: 350px; object-fit: cover;">
-                        <div class="prototype-card-content">
+                        <div class="card-content">
                             <h3>Project: Iron Empires II</h3>
-                            <p>The sequel to the award-winning resource management game. Introducing naval commerce and diplomatic expansion.</p>
+                            <p>The sequel to the award-winning resource management game. Introducing naval commerce
+                                expansion.</p>
                             <a href="prototype-aether.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
@@ -86,20 +90,16 @@
 
         <!-- Development Timeline -->
         <section id="timeline" style="background: #f1f5f9;">
-            <img src="https://images.unsplash.com/photo-1543616991-75037944ce69?auto=format&fit=crop&q=80&w=1920"
-                alt="Timeline BG" class="section-bg-img">
             <div class="container">
                 <div class="section-header">
                     <h2>Game Development Lifecycle</h2>
                     <p>The journey from a "lightbulb moment" to the retailer's shelf.</p>
                 </div>
-                <div style="max-width: 900px; margin: 0 auto; position: relative;">
-                    <div
-                        style="position: absolute; left: 50%; width: 4px; height: 100%; background: var(--primary); transform: translateX(-50%); opacity: 0.2;">
-                    </div>
+                <div class="lifecycle-timeline">
+                    <div class="lifecycle-line"></div>
 
-                    <div class="timeline-item animate-left" style="display: flex; justify-content: flex-start; margin-bottom: 60px; width: 45%;">
-                        <div class="theme-card" style="padding: 30px; border-radius: 20px; position: relative;">
+                    <div class="lifecycle-item left animate-left">
+                        <div class="theme-card" style="padding: 30px; border-radius: 20px;">
                             <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=300"
                                 alt="Concept"
                                 style="width: 100%; height: 150px; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
@@ -108,10 +108,14 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item animate-right" style="display: flex; justify-content: flex-end; margin-bottom: 60px; width: 100%;">
-                        <div class="theme-card" style="width: 45%; padding: 30px; border-radius: 20px; position: relative;">
+                    <div class="lifecycle-item right animate-right">
+                        <div class="theme-card" style="padding: 30px; border-radius: 20px;">
+                            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=400"
+                                alt="Alpha Prototype"
+                                style="width: 100%; height: 150px; border-radius: 10px; margin-bottom: 20px; object-fit: cover;">
                             <h3 style="color: var(--secondary);">02. Alpha Prototype</h3>
-                            <p style="margin-top: 10px; opacity: 0.8; font-size: 0.9rem;">Creating physical components with pen and cardboard to test basic balance and play feel.</p>
+                            <p style="margin-top: 10px; opacity: 0.8; font-size: 0.9rem;">Creating physical components
+                                with pen and cardboard to test basic balance and play feel.</p>
                         </div>
                     </div>
                 </div>
@@ -128,8 +132,11 @@
                 </div>
                 <div style="flex: 1; min-width: 300px;" class="animate-up">
                     <h2>Data-Driven Balance</h2>
-                    <p style="margin: 30px 0; font-size: 1.1rem; opacity: 0.7;">We collect session data after every playtest—tracking win rates, card usage, and game length to ensure a mathematically fair experience.</p>
-                    <div class="theme-card" style="display: flex; align-items: center; gap: 20px; padding: 25px; border-radius: 20px;">
+                    <p style="margin: 30px 0; font-size: 1.1rem; opacity: 0.7;">We collect session data after every
+                        playtest—tracking win rates, card usage, and game length to ensure a mathematically fair
+                        experience.</p>
+                    <div class="theme-card"
+                        style="display: flex; align-items: center; gap: 20px; padding: 25px; border-radius: 20px;">
                         <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary);"></i>
                         <div>
                             <h4 style="margin: 0;">1,200+ Recorded Sessions</h4>
@@ -162,14 +169,14 @@
                         <i class="fas fa-chess-knight"></i>
                         <span>PlayCraft</span>
                     </a>
-                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.
-                    </p>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Explore</h4>
                     <ul>
                         <li><a href="index.html">Home 1</a></li>
                         <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="games.html">My Games</a></li>
                         <li><a href="playtest.html">Playtest</a></li>
                     </ul>
@@ -194,14 +201,14 @@
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
                     <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
-                    <form style="display: flex; gap: 8px;">
-                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
-                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Subscribe</button>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PlayCraft Studio. All rights reserved.</p>
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
                 <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
             </div>
         </div>

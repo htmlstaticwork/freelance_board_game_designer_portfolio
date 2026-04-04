@@ -56,12 +56,9 @@
                     style="font-size: 1.25rem; max-width: 700px; margin: 20px auto 40px; opacity: 0.9; animation-delay: 0.2s;">
                     Be the first to explore new mechanics, break the meta, and help us craft perfect tabletop
                     experiences.</p>
-                <div class="animate-up hero-btns" style="display: flex; gap: 20px; animation-delay: 0.4s;">
-                    <a href="#join-form" class="btn btn-secondary" style="padding: 18px 45px; border-radius: 50px;">Join
-                        Playtest</a>
-                    <a href="#sessions" class="btn btn-primary"
-                        style="padding: 18px 45px; border-radius: 50px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">View
-                        Sessions</a>
+                <div class="hero-btns animate-up" style="animation-delay: 0.4s;">
+                    <a href="#join-form" class="btn btn-secondary">Join Playtest Now</a>
+                    <a href="#calendar" class="btn btn-primary" style="background: transparent; border: 2px solid white;">View Sessions</a>
                 </div>
             </div>
         </section>
@@ -73,7 +70,7 @@
                     <h2>Why Join Our Inner Circle?</h2>
                     <p>It's more than just playing—it's helping build a legacy of tabletop excellence.</p>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <div class="playtest-cards-flex">
                     <div class="card animate-up"
                         style="background: white; padding: 45px; border-radius: 30px; border-bottom: 5px solid var(--primary); box-shadow: 0 15px 40px rgba(0,0,0,0.05); transition: transform 0.4s;"
                         onmouseover="this.style.transform='translateY(-15px)'"
@@ -117,7 +114,7 @@
                 <div class="section-header">
                     <h2>Live Testing Calendar</h2>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+                <div class="session-grid">
                     <!-- Session 1 -->
                     <div class="session-card animate-up"
                         style="background: white; border-radius: 35px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.06); transition: all 0.4s;"
@@ -244,14 +241,9 @@
                         style="color: var(--secondary);">Shape</span> the Future of Gaming?</h2>
                 <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.8;">Join our global
                     guild of testers and help us build the next legendary box.</p>
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-secondary"
-                        style="padding: 18px 50px; border-radius: 50px; font-size: 1.1rem; box-shadow: 0 0 30px rgba(245, 158, 11, 0.4); transition: transform 0.3s;"
-                        onmouseover="this.style.transform='scale(1.1)'"
-                        onmouseout="this.style.transform='scale(1)'">Join Playtest Now</a>
-                    <a href="contact.html" class="btn btn-primary"
-                        style="padding: 18px 50px; border-radius: 50px; font-size: 1.1rem; background: transparent; border: 2px solid white;">Contact
-                        Me</a>
+                <div class="hero-btns" style="justify-content: center;">
+                    <a href="#" class="btn btn-secondary">Join Playtest Now</a>
+                    <a href="contact.html" class="btn btn-primary" style="background: transparent; border: 2px solid white;">Contact Me</a>
                 </div>
             </div>
         </section>
@@ -299,9 +291,9 @@
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
                     <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
-                    <form style="display: flex; gap: 8px;">
-                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
-                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>

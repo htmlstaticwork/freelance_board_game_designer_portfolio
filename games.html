@@ -63,35 +63,29 @@
                     <h2>Our Published Titles</h2>
                     <p>Games that have gone from prototypes to millions of table hours.</p>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="games-grid">
                     <!-- Games -->
-                    <div class="card animate-on-scroll"
-                        style="background: var(--card-bg-light); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+                    <div class="card animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=800"
                             alt="Dungeon Quest">
-                        <div style="padding: 25px;">
-                            <h3 style="margin-bottom: 10px;">Dungeon Architects</h3>
-                            <p style="opacity: 0.7; font-size: 0.9rem;">Building the perfect dungeon crawl through
-                                worker-placement.</p>
+                        <div class="card-content">
+                            <h3>Dungeon Architects</h3>
+                            <p>Building the perfect dungeon crawl through worker-placement.</p>
                         </div>
                     </div>
-                    <div class="card animate-on-scroll"
-                        style="background: var(--card-bg-light); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+                    <div class="card animate-on-scroll">
                         <img src="https://images.pexels.com/photos/7915282/pexels-photo-7915282.jpeg" alt="Cyber City">
-                        <div style="padding: 25px;">
-                            <h3 style="margin-bottom: 10px;">Cyber City Grid</h3>
-                            <p style="opacity: 0.7; font-size: 0.9rem;">Hack and slash through the neon-lit streets in
-                                this tactical strategy game.</p>
+                        <div class="card-content">
+                            <h3>Cyber City Grid</h3>
+                            <p>Hack and slash through the neon-lit streets in this tactical strategy game.</p>
                         </div>
                     </div>
-                    <div class="card animate-on-scroll"
-                        style="background: var(--card-bg-light); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+                    <div class="card animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1544731612-de7f96afe55f?auto=format&fit=crop&q=80&w=800"
                             alt="Vintage Cars">
-                        <div style="padding: 25px;">
-                            <h3 style="margin-bottom: 10px;">Revved Up: Vintage</h3>
-                            <p style="opacity: 0.7; font-size: 0.9rem;">High-stakes racing with classic 1950s car
-                                components.</p>
+                        <div class="card-content">
+                            <h3>Revved Up: Vintage</h3>
+                            <p>High-stakes racing with classic 1950s car components.</p>
                         </div>
                     </div>
                 </div>
@@ -162,8 +156,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer --    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-logo-desc">
@@ -171,14 +164,14 @@
                         <i class="fas fa-chess-knight"></i>
                         <span>PlayCraft</span>
                     </a>
-                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.
-                    </p>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Explore</h4>
                     <ul>
                         <li><a href="index.html">Home 1</a></li>
                         <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="games.html">My Games</a></li>
                         <li><a href="playtest.html">Playtest</a></li>
                     </ul>
@@ -203,18 +196,19 @@
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
                     <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
-                    <form style="display: flex; gap: 8px;">
-                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; background: var(--bg-light); color: var(--text-main);">
-                        <button type="submit" class="btn btn-primary" style="padding: 10px 18px;"><i class="fas fa-paper-plane"></i></button>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Subscribe</button>
                     </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PlayCraft Studio. All rights reserved.</p>
+                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
                 <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
     </footer>
+>
 
     <script src="main.js"></script>
 </body>
