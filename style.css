@@ -1439,7 +1439,15 @@ body.dark-mode .contact-form textarea:focus {
     .modal-title { font-size: 1.8rem; }
 }
 
-/* Responsive Overall */
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 @media (max-width: 1024px) {
     .header-container { padding: 0 15px; width: 100%; }
     .hero-title { font-size: 3rem; }
@@ -1494,9 +1502,11 @@ body.dark-mode .contact-form textarea:focus {
     }
     .newsletter-card { padding: 30px 15px; }
     .newsletter-form {
+        display: flex !important;
         flex-direction: column !important;
         width: 100% !important;
-        gap: 15px !important;
+        gap: 20px !important;
+        align-items: center !important;
     }
     .newsletter-form input {
         width: 100% !important;
@@ -1504,7 +1514,7 @@ body.dark-mode .contact-form textarea:focus {
     }
     .newsletter-form .btn {
         width: 100% !important;
-        margin: 15px 0 0 0 !important;
+        margin: 0 !important;
     }
     .hero-btns {
         flex-direction: column !important;
