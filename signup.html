@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayCraft | Join the Community</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .auth-toggles {
+            position: absolute;
+            top: 12px;
+            right: 12px;
             display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
+            gap: 10px;
+            z-index: 10;
+        }
+        .toggle-btn {
+            color: #475569; /* Enhanced visibility in light mode */
+            background: rgba(0, 0, 0, 0.05);
+        }
+        body.dark-mode .toggle-btn {
+            color: #f1f5f9;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 480px) {
+            .auth-header {
+                padding-top: 30px; /* Room for toggles on mobile */
+            }
+            .auth-toggles {
+                top: 10px;
+                right: 10px;
+                gap: 8px;
+            }
+            .toggle-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -89,3 +115,4 @@
     </script>
 </body>
 </html>
+

@@ -23,9 +23,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body, button, input, select, textarea {
     font-family: 'Outfit', sans-serif;
     line-height: 1.6;
+}
+
+body {
     background-color: var(--bg-light);
     color: var(--text-light);
     transition: var(--transition);
@@ -39,7 +42,7 @@ body.dark-mode {
 
 [dir="rtl"] {
     direction: rtl;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 a {
@@ -1462,12 +1465,6 @@ body.dark-mode .philosophy-card {
     opacity: 0.8;
 }
 
-.philosophy-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    opacity: 0.8;
-}
-
 /* Generic Theme Card for multiple uses */
 .theme-card {
     background: var(--bg-light);
@@ -1531,7 +1528,7 @@ body.dark-mode .contact-form textarea:focus {
 
 .modal-description {
     font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: 1.6;
     opacity: 0.8;
     margin-bottom: 30px;
 }
