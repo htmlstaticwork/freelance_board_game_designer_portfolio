@@ -178,23 +178,100 @@ body.dark-mode .hamburger {
 
 /* Common Hero Heading Standard */
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-transform: none;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    width: 100%;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
 }
 
 @media (max-width: 1024px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 }
 
 @media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 80px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .hero-title br {
+        display: none;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px !important;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
     }
 }
 
@@ -410,6 +487,12 @@ section {
 .section-header h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 2rem;
+    }
 }
 
 .section-header p {
