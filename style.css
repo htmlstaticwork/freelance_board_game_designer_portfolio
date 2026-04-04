@@ -1569,12 +1569,14 @@ body.dark-mode .contact-form textarea:focus {
         gap: 40px 20px;
     }
     .footer-newsletter {
-        grid-column: span 3;
+        grid-column: span 2;
+        text-align: left;
     }
     .footer-newsletter form {
         max-width: 400px;
+        margin: 0;
     }
-    .newsletter-card { padding: 40px 20px; border-radius: 20px; margin: 0 10px; }
+    .newsletter-card { padding: 40px 20px; border-radius: 20px; margin: 0 auto; }
     
     nav {
         position: fixed;
@@ -1622,7 +1624,7 @@ body.dark-mode .contact-form textarea:focus {
         padding: 60px 0; 
         border-radius: 20px;
     }
-    .newsletter-card { padding: 30px 15px; }
+    .newsletter-card { padding: 30px 15px; margin: 0 auto; }
     .newsletter-form {
         display: flex !important;
         flex-direction: column !important;
@@ -1679,6 +1681,20 @@ body.dark-mode .contact-form textarea:focus {
     }
     .games-grid {
         justify-content: center !important;
+    }
+    .footer-grid { 
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        justify-items: center;
+    }
+    .footer-newsletter {
+        grid-column: span 1;
+    }
+    .footer-logo-desc p {
+        margin-inline: auto;
+    }
+    .social-icons {
+        justify-content: center;
     }
 }
 
