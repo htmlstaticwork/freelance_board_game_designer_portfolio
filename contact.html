@@ -55,51 +55,9 @@
         <section id="contact-main" style="padding: 100px 0; background: #f8fafc;">
             <div class="container">
                 <div class="contact-grid">
-                    <!-- Contact Form (Left) -->
-                    <div class="animate-left"
-                        style="background: white; padding: 60px; border-radius: 40px; box-shadow: 0 40px 80px rgba(0,0,0,0.05); flex: 1.5;">
-                        <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 40px;">Send a Message</h2>
-                        <form id="contact-form">
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px;">
-                                <div>
-                                    <label style="display: block; margin-bottom: 10px; font-weight: 600;">Full Name</label>
-                                    <input type="text" placeholder="John Doe" required
-                                        style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; background: #f8fafc; font-family: inherit;">
-                                </div>
-                                <div>
-                                    <label style="display: block; margin-bottom: 10px; font-weight: 600;">Email Address</label>
-                                    <input type="email" placeholder="john@example.com" required
-                                        style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; background: #f8fafc; font-family: inherit;">
-                                </div>
-                            </div>
-
-                            <div style="margin-bottom: 25px;">
-                                <label style="display: block; margin-bottom: 10px; font-weight: 600;">Subject</label>
-                                <select
-                                    style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; background: #f8fafc; font-family: inherit;">
-                                    <option>General Inquiry</option>
-                                    <option>Game Design Project</option>
-                                    <option>Rulebook Writing</option>
-                                    <option>Playtesting Request</option>
-                                </select>
-                            </div>
-
-                            <div style="margin-bottom: 35px;">
-                                <label style="display: block; margin-bottom: 10px; font-weight: 600;">Your Message</label>
-                                <textarea rows="6" placeholder="How can I help you with your next board game project?"
-                                    required
-                                    style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; background: #f8fafc; font-family: inherit; resize: none;"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary"
-                                style="width: 100%; padding: 18px; border-radius: 15px; font-size: 1.1rem; font-weight: 600; box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);">Send
-                                Message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
-                        </form>
-                    </div>
-
-                    <!-- Contact Details (Right) -->
-                    <div class="contact-info animate-right" style="flex: 1;">
-                        <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 40px;">Contact Details</h2>
+                    <!-- Contact Details (Left) -->
+                    <div class="contact-info animate-left">
+                        <h2 style="font-size: 2.2rem; color: var(--primary); margin-bottom: 40px; text-align: center;">Contact Details</h2>
 
                         <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 40px;">
                             <div
@@ -145,6 +103,47 @@
                                 <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Contact Form (Right) -->
+                    <div class="form-card animate-right">
+                        <h2 style="font-size: 2.2rem; color: var(--primary); margin-bottom: 40px; text-align: center;">Send a Message</h2>
+                        <form id="contact-form">
+                            <div style="display: grid; grid-template-columns: 1fr; gap: 25px; margin-bottom: 25px;">
+                                <div>
+                                    <label style="display: block; margin-bottom: 10px; font-weight: 600;">Full Name</label>
+                                    <input type="text" placeholder="Enter your name" required
+                                        style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit;">
+                                </div>
+                                <div>
+                                    <label style="display: block; margin-bottom: 10px; font-weight: 600;">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" required
+                                        style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit;">
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 25px;">
+                                <label style="display: block; margin-bottom: 10px; font-weight: 600;">Subject</label>
+                                <select
+                                    style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit;">
+                                    <option>General Inquiry</option>
+                                    <option>Game Design Project</option>
+                                    <option>Rulebook Writing</option>
+                                    <option>Playtesting Request</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 35px;">
+                                <label style="display: block; margin-bottom: 10px; font-weight: 600;">Your Message</label>
+                                <textarea rows="6" placeholder="How can I help you with your next board game project?"
+                                    required
+                                    style="width: 100%; padding: 15px 20px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit; resize: none;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary"
+                                style="width: 100%; padding: 18px; border-radius: 15px; font-size: 1.1rem; font-weight: 600; box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);">Send
+                                Message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -208,7 +207,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 PlayCraft Studio. All rights reserved.</p>
+                <p>&copy; 2026 PlayCraft Studio. All rights reserved.</p>
                 <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
             </div>
         </div>

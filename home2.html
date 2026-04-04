@@ -14,10 +14,11 @@
     <style>
         .game-card-premium {
             position: relative;
-            height: 350px;
-            border-radius: 30px;
+            height: 400px;
+            border-radius: 40px;
             overflow: hidden;
             background: #000;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
 
         .game-card-premium img {
@@ -38,12 +39,13 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 40px;
+            padding: 40px 30px;
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
-            transform: translateY(100px);
-            transition: 0.5s;
+            transform: translateY(0);
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             color: white !important;
             text-align: center;
+            z-index: 2;
         }
 
         .game-info-overlay h3 {
@@ -75,7 +77,8 @@
         }
 
         .game-card-premium:hover .game-info-overlay {
-            transform: translateY(0);
+            padding-bottom: 60px;
+            background: linear-gradient(transparent, rgba(79, 70, 229, 0.8));
         }
 
         .case-study-flex, .community-flex {
@@ -235,6 +238,13 @@
                         <h3>Narrative Integration</h3>
                         <p>How components and rules work together to immerse the player in a world.</p>
                     </div>
+                    <div class="philosophy-item animate-up"
+                        style="flex: 1; padding: 40px; background: white; border-bottom: 5px solid var(--secondary); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <img src="strategic-depth.png" alt="Strategy"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 25px;">
+                        <h3>Strategic Depth</h3>
+                        <p>Creating layers of engagement that reward both casual play and deep mastery.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -295,14 +305,14 @@
                         <i class="fas fa-chess-knight"></i>
                         <span>PlayCraft</span>
                     </a>
-                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.
-                    </p>
+                    <p>Crafting immersive board game experiences since 2018. Design is my passion, gaming is my life.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Explore</h4>
                     <ul>
                         <li><a href="index.html">Home 1</a></li>
                         <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="games.html">My Games</a></li>
                         <li><a href="playtest.html">Playtest</a></li>
                     </ul>
@@ -328,8 +338,8 @@
                     <h4>Newsletter</h4>
                     <p style="margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Get the latest playtest invites and game updates.</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 10px;">Subscribe</button>
                     </form>
                 </div>
             </div>
