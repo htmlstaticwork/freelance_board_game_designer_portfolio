@@ -32,7 +32,7 @@
                     <li><a href="rulebooks.html">Rulebooks</a></li>
                     <li><a href="playtest.html" class="active">Playtest</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Reach Me</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -46,7 +46,7 @@
     <main>
         <!-- 1. Hero Section -->
         <section class="hero"
-            style="background-image: url('https://images.unsplash.com/photo-1610812383790-9f5da898a3b2?auto=format&fit=crop&q=80&w=1920');">
+            style="background-image: url('images/playtest_hero.png');">
             <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.7);"></div>
             <div class="container hero-container">
                 <div class="hero-content">
@@ -119,8 +119,9 @@
                     <h2>Live Testing Calendar</h2>
                 </div>
                 <div class="session-grid">
+                    <div class="test-grid">
                     <!-- Session 1 -->
-                    <div class="session-card animate-up"
+                    <div class="session-card reveal-up"
                         style="background: white; border-radius: 35px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.06); transition: all 0.4s;"
                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 30px 60px rgba(0,0,0,0.06)'">
@@ -145,7 +146,7 @@
                         </div>
                     </div>
                     <!-- Session 2 -->
-                    <div class="session-card animate-up"
+                    <div class="session-card reveal-up"
                         style="background: white; border-radius: 35px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.06); transition: all 0.4s; animation-delay: 0.1s;"
                         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.1)'"
                         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 30px 60px rgba(0,0,0,0.06)'">
@@ -186,7 +187,7 @@
                     <div style="position: absolute; top: 60px; left: 10%; right: 10%; height: 4px; background: rgba(255,255,255,0.1); z-index: 1;"
                         class="desktop-only"></div>
 
-                    <div class="step-item animate-up"
+                    <div class="step-item reveal-right"
                         style="flex: 1; min-width: 200px; text-align: center; position: relative; z-index: 2;">
                         <div style="width: 120px; height: 120px; background: var(--primary); border: 8px solid #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 30px; box-shadow: 0 0 40px rgba(79, 70, 229, 0.3); transition: transform 0.3s;"
                             onmouseover="this.style.transform='scale(1.15)'"
@@ -198,7 +199,7 @@
                         </p>
                     </div>
 
-                    <div class="step-item animate-up"
+                    <div class="step-item reveal-right"
                         style="flex: 1; min-width: 200px; text-align: center; position: relative; z-index: 2; animation-delay: 0.1s;">
                         <div style="width: 120px; height: 120px; background: var(--secondary); border: 8px solid #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 30px; box-shadow: 0 0 40px rgba(245, 158, 11, 0.3); transition: transform 0.3s;"
                             onmouseover="this.style.transform='scale(1.15)'"
@@ -209,7 +210,7 @@
                         <p style="opacity: 0.7;">Receive your digital keys for Tabletop Simulator or event invites.</p>
                     </div>
 
-                    <div class="step-item animate-up"
+                    <div class="step-item reveal-right"
                         style="flex: 1; min-width: 200px; text-align: center; position: relative; z-index: 2; animation-delay: 0.2s;">
                         <div style="width: 120px; height: 120px; background: var(--primary); border: 8px solid #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 30px; box-shadow: 0 0 40px rgba(79, 70, 229, 0.3); transition: transform 0.3s;"
                             onmouseover="this.style.transform='scale(1.15)'"
@@ -221,7 +222,7 @@
                         </p>
                     </div>
 
-                    <div class="step-item animate-up"
+                    <div class="step-item reveal-right"
                         style="flex: 1; min-width: 200px; text-align: center; position: relative; z-index: 2; animation-delay: 0.3s;">
                         <div style="width: 120px; height: 120px; background: var(--secondary); border: 8px solid #1e293b; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 30px; box-shadow: 0 0 40px rgba(245, 158, 11, 0.3); transition: transform 0.3s;"
                             onmouseover="this.style.transform='scale(1.15)'"
@@ -240,7 +241,7 @@
         <section id="playtest-cta"
             style="padding: 120px 0; text-align: center; background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1920'); background-attachment: fixed; background-size: cover; position: relative; overflow: hidden;">
             <div class="hero-overlay" style="background: rgba(2, 6, 23, 0.8);"></div>
-            <div class="container animate-up" style="position: relative; z-index: 2; color: white;">
+            <div class="container blur-in" style="position: relative; z-index: 2; color: white;">
                 <h2 style="font-size: 3.5rem; margin-bottom: 20px;">Ready to <span
                         style="color: var(--secondary);">Shape</span> the Future of Gaming?</h2>
                 <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.8;">Join our global

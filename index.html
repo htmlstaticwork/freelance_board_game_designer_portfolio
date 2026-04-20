@@ -32,7 +32,7 @@
                     <li><a href="rulebooks.html">Rulebooks</a></li>
                     <li><a href="playtest.html">Playtest</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Reach Me</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -46,19 +46,36 @@
     <main>
         <!-- Hero Section -->
         <section class="hero"
-            style="background-image: url('https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?auto=format&fit=crop&q=80&w=1920');">
+            style="background-image: url('images/hero.png');">
             <div class="hero-overlay"></div>
             <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Crafting
                         Worlds, <br><span style="color: var(--secondary);">One Move</span> at a Time.</h1>
                     <p class="hero-description">I'm a
-                        freelance board game designer specializing in immersive mechanics, strategic depth, and
-                        unforgettable tabletop experiences. From rapid prototyping to final rulebook development, I bridge the gap between creative vision and table-ready reality.</p>
+                        professional board game architect. For over 6 years, I've been blending mathematical precision with artistic vision to create experiences that ignite imaginations. From core mechanic balancing to global publishing, I help turn table-top dreams into world-class realities.</p>
                     <div class="hero-btns">
                         <a href="playtest.html" class="btn btn-primary">Join a Playtest</a>
                         <a href="#featured" class="btn btn-secondary">View My Work</a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: Global Impact Stats -->
+        <section id="stats" style="padding: 60px 0; background: #020617; color: white; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <div class="container" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 40px; text-align: center;">
+                <div class="animate-up">
+                    <h2 style="font-size: 3rem; color: var(--secondary); margin: 0; font-weight: 800;">12+</h2>
+                    <p style="margin: 5px 0 0; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Published Titles</p>
+                </div>
+                <div class="animate-up" style="animation-delay: 0.1s;">
+                    <h2 style="font-size: 3rem; color: var(--primary); margin: 0; font-weight: 800;">50k+</h2>
+                    <p style="margin: 5px 0 0; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Active Players</p>
+                </div>
+                <div class="animate-up" style="animation-delay: 0.2s;">
+                    <h2 style="font-size: 3rem; color: var(--secondary); margin: 0; font-weight: 800;">3</h2>
+                    <p style="margin: 5px 0 0; opacity: 0.7; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Industry Awards</p>
                 </div>
             </div>
         </section>
@@ -74,7 +91,7 @@
                 </div>
                 <div class="games-grid">
                     <!-- Game 1 -->
-                    <div class="card animate-on-scroll">
+                    <div class="card reveal-up">
                         <img src="https://images.pexels.com/photos/207924/pexels-photo-207924.jpeg" alt="StarVoyager">
                         <div class="card-content">
                             <span class="category-tag" style="background: var(--primary);">STRATEGY</span>
@@ -86,7 +103,7 @@
                         </div>
                     </div>
                     <!-- Game 2 -->
-                    <div class="card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="card reveal-up delay-1">
                         <img src="https://images.pexels.com/photos/8111324/pexels-photo-8111324.jpeg"
                             alt="Mystic Grove">
                         <div class="card-content">
@@ -99,7 +116,7 @@
                         </div>
                     </div>
                     <!-- Game 3 -->
-                    <div class="card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="card reveal-up delay-2">
                         <img src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&q=80&w=600"
                             alt="Midnight Manor">
                         <div class="card-content">
@@ -123,7 +140,7 @@
                     <p>How a simple idea transforms into a table-ready masterpiece.</p>
                 </div>
                 <div class="process-grid">
-                        <div class="process-step animate-on-scroll" style="text-align: center;">
+                        <div class="process-step zoom-in" style="text-align: center;">
                             <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&q=80&w=600"
                                 alt="Ideation"
                                 style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--primary);">
@@ -158,7 +175,7 @@
                     <p>What publishers and gamers are saying about my designs.</p>
                 </div>
                 <div class="testimonials-grid">
-                    <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-card blur-in">
                         <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100"
                             alt="Publisher" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
                         <div>
@@ -190,7 +207,7 @@
                     <p style="color: rgba(255,255,255,0.7);">Peek into the future of my design studio.</p>
                 </div>
                 <div class="upcoming-grid">
-                    <div class="prototype-card animate-on-scroll">
+                    <div class="prototype-card reveal-left">
                         <img src="https://images.pexels.com/photos/19677/pexels-photo.jpg" alt="Aether Bridge">
                         <div class="prototype-card-info">
                             <span class="category-tag" style="background: var(--secondary);">IN DEVELOPMENT</span>
@@ -198,7 +215,7 @@
                             <p>A cooperative puzzle game about connecting ancient civilizations.</p>
                         </div>
                     </div>
-                    <div class="prototype-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="prototype-card reveal-right">
                         <img src="https://images.pexels.com/photos/7329697/pexels-photo-7329697.jpeg" alt="Kingdom's Edge">
                         <div class="prototype-card-info">
                             <span class="category-tag" style="background: var(--primary);">ALPHA TESTING</span>
@@ -214,7 +231,7 @@
         <section class="cta-section"
             style="padding: 120px 0; text-align: center; background-image: url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; position: relative;">
             <div class="hero-overlay"></div>
-            <div class="container animate-up" style="position: relative; z-index: 2; color: white;">
+            <div class="container skew-in" style="position: relative; z-index: 2; color: white;">
                 <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Playtest?</h2>
                 <p style="font-size: 1.25rem; margin-bottom: 40px; opacity: 0.9;">Join my exclusive playtesting group
                     and help shape the next big hit.</p>

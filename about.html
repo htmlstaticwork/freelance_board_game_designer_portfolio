@@ -32,7 +32,7 @@
                     <li><a href="rulebooks.html">Rulebooks</a></li>
                     <li><a href="playtest.html">Playtest</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Reach Me</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -66,8 +66,8 @@
         <section id="designer-intro" style="overflow: hidden;">
             <div class="container">
                 <div class="story-flex">
-                    <div class="animate-left" style="flex: 1; position: relative; margin-bottom: 30px;">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                    <div class="reveal-left" style="flex: 1; position: relative; margin-bottom: 30px;">
+                        <img src="images/studio.png"
                             alt="My Studio"
                             style="width: 100%; border-radius: 40px; box-shadow: 0 30px 70px rgba(0,0,0,0.15); transition: transform 0.5s;"
                             onmouseover="this.style.transform='scale(1.05)'"
@@ -77,7 +77,7 @@
                             <p style="margin: 0; opacity: 0.8;">of game design Mastery</p>
                         </div>
                     </div>
-                    <div class="animate-up" style="flex: 1.2;">
+                    <div class="reveal-right" style="flex: 1;">
                         <span
                             style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">The
                             Story</span>
@@ -189,8 +189,63 @@
                         </div>
                     </div>
                     <div style="flex: 1;" class="animate-right">
-                        <img src="https://images.pexels.com/photos/33975462/pexels-photo-33975462.jpeg" alt="Process"
+                        <img src="images/components.png" alt="Process"
                             style="width: 100%; border-radius: 30px; box-shadow: 0 40px 80px rgba(79, 70, 229, 0.1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: Professional Services -->
+        <section id="services-about" style="padding: 100px 0; background: #f8fafc;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Professional Services</h2>
+                    <p>I provide end-to-end design solutions for publishers and independent creators.</p>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="theme-card rotate-in" style="padding: 40px; border-radius: 30px; text-align: center;">
+                        <i class="fas fa-drafting-compass" style="font-size: 3rem; color: var(--primary); margin-bottom: 25px;"></i>
+                        <h3>Mechanics Development</h3>
+                        <p>Mathematical balancing, core loop optimization, and innovative system design for all genres.</p>
+                    </div>
+                    <div class="theme-card animate-up" style="padding: 40px; border-radius: 30px; text-align: center; animation-delay: 0.1s;">
+                        <i class="fas fa-book-open" style="font-size: 3rem; color: var(--secondary); margin-bottom: 25px;"></i>
+                        <h3>Rulebook Writing</h3>
+                        <p>Technical writing that is clear, concise, and easy to learn. I translate complex rules into player-friendly guides.</p>
+                    </div>
+                    <div class="theme-card animate-up" style="padding: 40px; border-radius: 30px; text-align: center; animation-delay: 0.2s;">
+                        <i class="fas fa-box-open" style="font-size: 3rem; color: var(--primary); margin-bottom: 25px;"></i>
+                        <h3>Production Assets</h3>
+                        <p>High-fidelity print-and-play files, component spec sheets, and manufacturing-ready layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: Technical Toolkit -->
+        <section id="toolkit" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Toolkit</h2>
+                    <p>The specialized software and hardware I use to bring ideas to life.</p>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                    <div style="text-align: center; width: 150px;">
+                        <i class="fas fa-desktop" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary);"></i>
+                        <h4 style="margin: 0;">Tabletop Simulator</h4>
+                    </div>
+                    <div style="text-align: center; width: 150px;">
+                        <i class="fas fa-pen-nib" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--secondary);"></i>
+                        <h4 style="margin: 0;">Adobe Creative Cloud</h4>
+                    </div>
+                    <div style="text-align: center; width: 150px;">
+                        <i class="fas fa-table" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--primary);"></i>
+                        <h4 style="margin: 0;">Google Sheets (Data modeling)</h4>
+                    </div>
+                    <div style="text-align: center; width: 150px;">
+                        <i class="fas fa-print" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--secondary);"></i>
+                        <h4 style="margin: 0;">3D Prototyping</h4>
                     </div>
                 </div>
             </div>
@@ -206,40 +261,40 @@
                 <div class="timeline">
                     <div class="timeline-step animate-up">
                         <div class="timeline-content-left">
-                            <h3 style="color: var(--secondary);">01. Ideation</h3>
+                            <h3 style="color: var(--secondary); margin-bottom: 10px;">01. Ideation</h3>
                             <p style="margin: 0; opacity: 0.7;">Mapping mechanics to themes and identifying the "hook"
                                 that makes the game unique.</p>
                         </div>
                         <div class="step-number">A</div>
                         <div class="timeline-content-right">
                             <img src="https://images.pexels.com/photos/25798270/pexels-photo-25798270.jpeg"
-                                alt="Ideation" style="width: 150px; border-radius: 20px;">
+                                alt="Ideation" style="width: 300px; border-radius: 20px;">
                         </div>
                     </div>
 
                     <div class="timeline-step reverse animate-up" style="animation-delay: 0.1s;">
                         <div class="timeline-content-right">
-                            <h3 style="color: var(--primary);">02. Prototyping</h3>
+                            <h3 style="color: var(--primary); margin-bottom: 10px;">02. Prototyping</h3>
                             <p style="margin: 0; opacity: 0.7;">Creating rough-and-ready physical versions to test core
                                 loops and component balance.</p>
                         </div>
                         <div class="step-number" style="background: var(--primary);">B</div>
                         <div class="timeline-content-left">
                             <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=300"
-                                alt="Prototype" style="width: 150px; border-radius: 20px;">
+                                alt="Prototype" style="width: 300px; border-radius: 20px;">
                         </div>
                     </div>
 
                     <div class="timeline-step animate-up" style="animation-delay: 0.2s;">
                         <div class="timeline-content-left">
-                            <h3 style="color: var(--secondary);">03. Playtesting</h3>
+                            <h3 style="color: var(--secondary); margin-bottom: 10px;">03. Playtesting</h3>
                             <p style="margin: 0; opacity: 0.7;">Hundreds of blind tests to refine rules and ensure the
                                 emotional arc of the game works.</p>
                         </div>
                         <div class="step-number">C</div>
                         <div class="timeline-content-right">
                             <img src="https://images.unsplash.com/photo-1544731612-de7f96afe55f?auto=format&fit=crop&q=80&w=300"
-                                alt="Test" style="width: 150px; border-radius: 20px;">
+                                alt="Test" style="width: 300px; border-radius: 20px;">
                         </div>
                     </div>
                 </div>

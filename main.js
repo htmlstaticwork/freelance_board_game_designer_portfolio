@@ -58,13 +58,13 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate-up');
+            entry.target.classList.add('in-view');
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-document.querySelectorAll('section, .card, .animate-on-scroll').forEach(el => {
+document.querySelectorAll('section, .card, .animate-on-scroll, [class*="reveal-"], .zoom-in, .blur-in, .skew-in, .rotate-in').forEach(el => {
     observer.observe(el);
 });
 
