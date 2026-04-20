@@ -39,12 +39,21 @@
 }
 
 html {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
     scroll-behavior: smooth;
 }
 
 body, button, input, select, textarea {
     font-family: 'Outfit', sans-serif;
+    color: var(--text-light);
     line-height: 1.6;
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: var(--bg-light);
 }
 
 body {
@@ -111,6 +120,7 @@ body.dark-mode header {
     align-items: center;
     width: 100%;
     padding: 0 var(--container-padding);
+    max-width: 100%; /* Ensure it doesn't exceed viewport */
 }
 
 .logo {
@@ -323,6 +333,26 @@ body.dark-mode .hamburger {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 15px 30px rgba(79, 70, 229, 0.4);
     filter: brightness(1.1);
+}
+
+/* Header Reach Me Button Specifics */
+.reach-me-btn {
+    padding: 12px 20px !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+}
+
+.reach-me-btn:hover {
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4) !important;
+}
+
+.desktop-only {
+    display: inline-flex !important;
+}
+
+.mobile-only {
+    display: none !important;
 }
 
 .btn-secondary {
@@ -712,7 +742,7 @@ body.dark-mode .games-grid .card {
 .story-badge {
     position: absolute;
     bottom: -20px;
-    right: -20px;
+    right: 0px;
     background: var(--primary);
     color: white;
     padding: 25px;
@@ -760,8 +790,8 @@ body.dark-mode .games-grid .card {
 
 .philosophy-card {
     flex: 1;
-    min-width: 280px;
-    max-width: 380px;
+    min-width: 250px;
+    max-width: 100%;
     padding: 40px;
     background: white;
     border-radius: 20px;
@@ -1639,7 +1669,56 @@ body.dark-mode .contact-form textarea:focus {
 }
 
 @media (max-width: 1024px) {
-    .header-container { width: 100%; }
+    .header-container { 
+        padding: 0 12px; 
+        overflow: visible;
+        width: 100%;
+        max-width: 100%;
+    }
+    .logo {
+        font-size: 1.2rem;
+        flex-shrink: 1; /* Allow logo to shrink if needed */
+        min-width: 0;
+        white-space: nowrap;
+    }
+    .logo i {
+        font-size: 1.6rem;
+        flex-shrink: 0;
+    }
+    .logo span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .header-actions {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-shrink: 0; /* Prevent actions from shrinking */
+        margin-left: 10px;
+    }
+    .toggle-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-shrink: 0;
+    }
+    #rtl-toggle {
+        width: auto;
+        min-width: 34px;
+        padding: 0 4px;
+        font-size: 0.75rem;
+    }
+    .hamburger {
+        font-size: 1.4rem;
+        margin: 0;
+        display: block !important;
+        flex-shrink: 0; /* Crucial: never let the hamburger shrink or be pushed out */
+    }
     .hero-title { font-size: 3rem; }
     .footer-grid { 
         grid-template-columns: 1.5fr 1fr 1fr; 
@@ -1654,7 +1733,13 @@ body.dark-mode .contact-form textarea:focus {
         margin: 0;
     }
     .newsletter-card { padding: 40px 20px; border-radius: 20px; margin: 0 auto; }
-    
+
+    .mobile-only {
+        display: flex !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
     nav {
         position: fixed;
         top: var(--header-height);
@@ -1673,6 +1758,15 @@ body.dark-mode .contact-form textarea:focus {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li .reach-me-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
     .session-grid {
         justify-content: center !important;
@@ -1776,6 +1870,32 @@ body.dark-mode .contact-form textarea:focus {
 }
 
 @media (max-width: 480px) {
+    .header-container {
+        padding: 0 8px;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    .logo i {
+        font-size: 1.4rem;
+    }
+    .header-actions {
+        gap: 6px;
+        margin-left: 5px;
+    }
+    .toggle-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.7rem;
+    }
+    #rtl-toggle {
+        min-width: 30px;
+        padding: 0 3px;
+        font-size: 0.65rem;
+    }
+    .hamburger {
+        font-size: 1.2rem;
+    }
     .hero-title { font-size: 1.8rem; }
     .footer-grid { grid-template-columns: 1fr; }
     .games-grid .card {
