@@ -171,23 +171,23 @@ nav ul li a:hover::after {
 }
 
 /* Active Navigation State */
-nav ul li a.active {
+nav ul li a.active:not(.btn) {
     color: var(--primary);
     font-weight: 700;
     background: rgba(79, 70, 229, 0.1);
 }
 
-body.dark-mode nav ul li a.active {
+body.dark-mode nav ul li a.active:not(.btn) {
     background: rgba(255, 255, 255, 0.05);
     color: var(--secondary);
 }
 
-nav ul li a.active::after {
+nav ul li a.active:not(.btn)::after {
     width: calc(100% - 24px);
     background: var(--primary);
 }
 
-body.dark-mode nav ul li a.active::after {
+body.dark-mode nav ul li a.active:not(.btn)::after {
     background: var(--secondary);
 }
 
@@ -337,13 +337,37 @@ body.dark-mode .hamburger {
 
 /* Header Reach Me Button Specifics */
 .reach-me-btn {
-    padding: 12px 20px !important;
-    border-radius: 10px !important;
-    font-weight: 600 !important;
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+    padding: 12px 24px !important;
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    background-color: var(--primary) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3) !important;
+    transition: var(--transition);
+    border: none !important;
 }
 
 .reach-me-btn:hover {
+    background-color: var(--primary-dark) !important;
+    color: white !important;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.5) !important;
+    filter: brightness(1.1);
+}
+
+.reach-me-btn:active {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4) !important;
+}
+
+body.dark-mode .reach-me-btn {
+    background-color: var(--primary) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .reach-me-btn:hover {
+    background-color: var(--primary-dark) !important;
     box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4) !important;
 }
 
@@ -1766,7 +1790,13 @@ body.dark-mode .contact-form textarea:focus {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 20px;
+        padding: 16px 24px !important;
+        font-size: 1rem !important;
+        background-color: var(--primary) !important;
+        color: white !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     .session-grid {
         justify-content: center !important;
